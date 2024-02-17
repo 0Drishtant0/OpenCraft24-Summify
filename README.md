@@ -10,7 +10,8 @@
 
 This innovative project combines two powerful tools: a web app for comprehensive keyword-based article discovery and summarization, and a browser extension for seamless on-page summarization. With intuitive interfaces and intelligent processing, it empowers users to explore information efficiently and gain insights effortlessly.
 
-**![Also checkout our video which shows the entire workflow of the projects](www.youtube.com)
+Check out this video demonstration of the project: [Project Demo](https://www.youtube.com).
+
 
 **Key Features:**
 
