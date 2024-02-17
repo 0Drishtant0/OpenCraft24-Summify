@@ -45,13 +45,12 @@ Check out this video demonstration of the project: [Project Demo](https://www.yo
 
 * **Web App:**
     * Programming language: [e.g., Python, JavaScript]
-    * Framework: [e.g., Flask, Django, React]
-    * Dataset source: [e.g., Wikipedia, custom corpus]
-    * Search algorithm: [e.g., TF-IDF, BM25]
+    * Framework: [e.g., Flask, Django, js]
+    * Dataset source: [e.g., Global-News-Dataset, one that was present under the problem statement]
 * **Summarization Extension:**
-    * Development environment: [e.g., WebExtensions API]
-    * Summarization technique: [e.g., TextRank, LexRank]
-    * Related article suggestion: [e.g., content-based filtering, collaborative filtering]
+    * Provides the feature of changing the length of the summarizer.
+    * Summarization that is not just ranking the top sentenses but rephrasing the entire content to meet the user's need.
+    * Related article suggestion
 
 **Code Example (Keyword Processing):**
 
@@ -94,9 +93,9 @@ def process_text(text):
 ```
 
 **Screenshots:**
+![Article suggestions](images/suggestion.png)
+![Summarizer extension](images/summary.png)
 
-[Image of Web App Interface]
-[Image of Summarization Extension in Use]
 
 **GitHub Repositories:**
 
