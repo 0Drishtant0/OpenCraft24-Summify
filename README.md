@@ -100,8 +100,8 @@ def process_text(text):
 
 **GitHub Repositories:**
 
-* Web App: [[[invalid URL removed]]([invalid URL removed])]
-* Summarization Extension: [[[invalid URL removed]]([invalid URL removed])]
+* Web App: [Webapp](https://github.com/0Drishtant0/News-Recommendation-System)
+* Summarization Extension: [extension](https://github.com/0Drishtant0/Article-Summarizer-Extension)
 
 **Benefits:**
 
