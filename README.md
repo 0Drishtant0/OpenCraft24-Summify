@@ -3,14 +3,20 @@
 
 **# Project Name: Summify**
 
+
+
+
 ![Summify](images/cover.png)
 
 This innovative project combines two powerful tools: a web app for comprehensive keyword-based article discovery and summarization, and a browser extension for seamless on-page summarization. With intuitive interfaces and intelligent processing, it empowers users to explore information efficiently and gain insights effortlessly.
+
+**![Also checkout our video which shows the entire workflow of the projects](www.youtube.com)
 
 **Key Features:**
 
 * **Intuitive Web App:**
     * **Effortless Autocomplete:** Ensures fast and accurate keyword exploration.
+      ![autocomplete](images/autocomplete.png)
     * **Relevant Article Discovery:** Leverages powerful search algorithms to surface the most pertinent articles from a vast dataset.
     * **Direct Article Access:** Seamlessly opens articles in browser tabs for in-depth reading.
 * **Powerful Summarization Extension:**
@@ -49,16 +55,41 @@ This innovative project combines two powerful tools: a web app for comprehensive
 **Code Example (Keyword Processing):**
 
 ```python
-def process_keyword(keyword):
-    # Preprocessing (lowercase, remove stop words)
-    processed_keyword = preprocess(keyword)
+def process_text(text):
+    """Process text function.
+    Input:
+        text: a string containing the text
+    Output:
+        processed_text: a list of words containing the processed text
 
-    # Search algorithm to retrieve relevant articles
-    articles = search_articles(processed_keyword)
+    """
+    stemmer = PorterStemmer()
+    stopwords_english = stopwords.words('english')
 
-    # Optionally: Rank articles based on relevance score
+    # remove stock market tickers like $GE
+    text = re.sub(r'\$\w*', '', text)
+    # remove old style retweet text "RT"
+    text = re.sub(r'^RT[\s]+', '', text)
+    # remove hyperlinks    
+    text = re.sub(r'https?://[^\s\n\r]+', '', text)
+    # remove hashtags
+    # only removing the hash # sign from the word
+    text = re.sub(r'#', '', text)
+    # tokenize text
+    tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True,
+                               reduce_len=True)
+    text_tokens = tokenizer.tokenize(text)
 
-    return articles
+    processed_text = []
+    for word in text_tokens:
+        if (word not in stopwords_english and  # remove stopwords
+                word not in string.punctuation):  # remove punctuation
+            # processed_text.append(word)
+            stem_word = stemmer.stem(word)  # stemming word
+            processed_text.append(stem_word)
+
+    return processed_text
+
 ```
 
 **Screenshots:**
@@ -78,4 +109,3 @@ def process_keyword(keyword):
 * **Time-Saving Convenience:** Seamless integration and one-click summarization.
 * **Customizable Experience:** Tailored summaries to fit your needs.
 
-**I hope this refined Markdown description effectively showcases your project's potential. Feel free to adapt it further to match your specific project details and add your own personal touch!**
