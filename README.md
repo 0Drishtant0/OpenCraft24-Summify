@@ -1,8 +1,9 @@
 # OpenCraft24-Summify
 
-I'd be glad to help you create a compelling Markdown description for your project, incorporating the best aspects of the provided responses and addressing their shortcomings. Here's a revised version that aims for clarity, structure, and visual appeal:
 
-**# Project Name: A Comprehensive Information Hub with Intelligent Summarization**
+**# Project Name: Summify**
+
+![Summify](images/cover.png)
 
 This innovative project combines two powerful tools: a web app for comprehensive keyword-based article discovery and summarization, and a browser extension for seamless on-page summarization. With intuitive interfaces and intelligent processing, it empowers users to explore information efficiently and gain insights effortlessly.
 
