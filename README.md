@@ -55,7 +55,7 @@ Check out this video demonstration of the project: [Project Demo](https://www.yo
 **Code Example (Keyword Processing):**
 
 ```python
-def process_text(text):
+def process_text(text):Summarizer extension
     """Process text function.
     Input:
         text: a string containing the text
@@ -95,6 +95,11 @@ def process_text(text):
 **Screenshots:**
 ![Article suggestions](images/suggestion.png)
 ![Summarizer extension](images/summary.png)
+
+**Updated Screenshots**
+>This update merged the functionalities of the webapp into the extension and this is how it looks like
+![extension-upd](images/update2.png)
+![KeyBert](images/update1.png)
 
 
 **GitHub Repositories:**
